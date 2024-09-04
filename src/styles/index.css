@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #6c38cc;
+  --color-bg: #16171d;
+  --color-bg-medium: #1e1f29;
+  --color-bg-light: #2e2d3d;
+  --color-text: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

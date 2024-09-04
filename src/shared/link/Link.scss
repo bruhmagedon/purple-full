@@ -1,0 +1,8 @@
+.link {
+  padding: 8px 16px;
+  height: 38px;
+  &__active {
+    border: 1px solid #4d5064;
+    border-radius: 8px;
+  }
+}

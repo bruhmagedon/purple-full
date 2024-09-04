@@ -1,0 +1,117 @@
+.header {
+  background: var(--color-bg-medium);
+
+  &__main-container {
+    padding: 40px 24px;
+    // Компенсация двух боковых пэдингов
+    max-width: calc(1220px - 48px);
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+      padding: 40px 24px 20px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      max-width: 174px;
+    }
+  }
+  &__menu {
+    display: flex;
+    gap: 2.5rem;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__login {
+    color: var(--color-text);
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__login-media {
+    display: none;
+    color: var(--color-text);
+    background-color: transparent;
+    cursor: pointer;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      position: relative;
+      flex-direction: column;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (max-width: 900px) {
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 100%;
+      margin: 0;
+
+      @media (max-width: 900px) {
+        font-size: 30px;
+        line-height: 120%;
+      }
+    }
+    span {
+      background: linear-gradient(
+        158deg,
+        #d77be5 0%,
+        #be63e5 34.69%,
+        #6c38cc 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &-buttons {
+      display: flex;
+      gap: 2rem;
+      @media (max-width: 900px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__preview {
+    cursor: pointer;
+
+    @media (max-width: 900px) {
+      & img {
+        width: 100%;
+        transform: scale(1.15);
+      }
+    }
+  }
+}

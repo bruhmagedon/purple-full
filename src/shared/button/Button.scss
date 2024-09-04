@@ -1,0 +1,33 @@
+.button {
+  height: 54px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #4d5064;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__active {
+    border: none;
+    background: var(--color-primary);
+  }
+  &_base {
+    padding: 16px 32px;
+    @media (max-width: 900px) {
+      padding: 12px 24px;
+    }
+  }
+  &_s {
+    padding: 8px 16px;
+    height: 38px;
+  }
+  &_xs {
+    padding: 6px 12px;
+    height: 30px;
+    font-size: 16px;
+    gap: 4px;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+}
